@@ -262,9 +262,12 @@ header .navbar-toggler:hover{
     height: 0.3rem;
 }
 .welcome .progress .progress-bar {
+    width: 0;    
     background: linear-gradient(to right, #35a22c, #0ea8cf);
 }
-
+.welcome__content.aos-animate .progress-bar{
+    animation: progress 1.5s ease-in-out forwards;
+}
 .welcome h4 {
     font-size: 14px;
     line-height: 30px;
@@ -507,3 +510,13 @@ footer a:hover {
 .footer__main i:hover {
     border-color: #35a22c;
 }
+
+/***************keyframes**********/
+@keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 

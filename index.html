@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -65,13 +67,15 @@
                     <!-- <img src="./img/finland.jpg" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption container">
 
-                        <div class="carousel__thumb">
+                        <div class="carousel__thumb animate__animated animate__fadeInUp">
                             <!-- <div> -->
                             <img src="./img/01-3.jpg" alt="">
                             <!-- </div> -->
                         </div>
-                        <h5>Our goals. Our mission.</h5>
-                        <p>How we help other companies to grow.</p>
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+                        </h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                            to grow.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -79,26 +83,30 @@
                     <!-- <img src="./img/mountains.jpg" class="d-block w-100" alt="..."> -->
 
                     <div class="carousel-caption container">
-                        <div class="carousel__thumb">
+                        <div class="carousel__thumb animate__animated animate__fadeInUp">
 
                             <img src="./img/02-3.jpg" alt="">
 
                         </div>
-                        <h5>Our goals. Our mission.</h5>
-                        <p>How we help other companies to grow.</p>
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+                        </h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                            to grow.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="overlay"></div>
                     <!-- <img src="./img/mountains-1.jpg" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption container">
-                        <div class="carousel__thumb">
+                        <div class="carousel__thumb animate__animated animate__fadeInUp">
 
                             <img src="./img/03-3.jpg" alt="">
 
                         </div>
-                        <h5>Our goals. Our mission.</h5>
-                        <p>How we help other companies to grow.</p>
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+                        </h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                            to grow.</p>
                     </div>
                 </div>
             </div>
@@ -115,8 +123,8 @@
     <section class="welcome py-5">
         <div class="bg-overlay"></div>
         <div class="container py-5">
-            <div class="heading text-center mx-auto position-relative">
-                <h2>Welcome To My Site</h2>
+            <div class="heading text-center mx-auto position-relative" data-aos="fade-up" data-aos-duration="2000">
+                <h2 id="welHeading">Welcome To My Site</h2>
                 <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                     cubilia Curae;
                     Nulla mollis dapibus nunc, ut rhoncus
@@ -125,12 +133,12 @@
                     ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
 
             </div>
-            <div class="welcome__content mt-5">
+            <div class="welcome__content mt-5"  data-aos="fade-up" data-aos-duration="2000">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-4 pb-2">
                         <h4>Design</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 50%;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -138,7 +146,7 @@
                     <div class="col-12 col-lg-4 col-md-4 col-sm-6 mb-4 pb-2">
                         <h4>Marketing</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80% ;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 80% ;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -146,7 +154,7 @@
                     <div class="col-12 col-lg-4  col-md-4 col-sm-6 mb-4 pb-2">
                         <h4>Photography</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60% ;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 60% ;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -154,7 +162,7 @@
                     <div class="col-12 col-lg-4  col-md-4 col-sm-6 mb-4 pb-2">
                         <h4>Branding</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70% ;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 70% ;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -162,7 +170,7 @@
                     <div class="col-12 col-lg-4  col-md-4 col-sm-6 mb-4 pb-2">
                         <h4>Development</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 90% ;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 90% ;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -170,20 +178,20 @@
                     <div class="col-12 col-lg-4 col-md-4 col-sm-6 ">
                         <h4>SEO</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80% ;" aria-valuenow="50"
+                            <div class="progress-bar" role="progressbar" style="max-width: 80% ;" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
     <section class="feature">
         <div class="overlay"></div>
         <div class="container">
-            <div class="heading text-center mx-auto">
+            <div class="heading text-center mx-auto" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="text-white">I'm Available For Hire</h2>
                 <p class="my-3 text-white"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
                     posuere
@@ -194,7 +202,7 @@
             <div class="feature__content text-center mt-5 pt-3">
                 <div class="row">
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <div class="feature__item">
+                        <div class="feature__item" data-aos="zoom-in" data-aos-duration="2000">
                             <i class="fa fa-paint-brush"></i>
                             <h4>Design</h4>
                             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -204,7 +212,7 @@
 
                     </div>
                     <div class="col-12 col-md-4 mb-5 mb-md-0">
-                        <div class="feature__item">
+                        <div class="feature__item" data-aos="zoom-in" data-aos-duration="2000">
                             <i class="fa fa-shekel-sign"></i>
                             <h4>Marketing</h4>
                             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -214,7 +222,7 @@
 
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="feature__item">
+                        <div class="feature__item" data-aos="zoom-in" data-aos-duration="2000">
                             <i class="fa fa-camera"></i>
                             <h4>Photography</h4>
                             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -229,7 +237,7 @@
     </section>
     <section class="projects py-5">
         <div class="container py-5">
-            <div class="heading text-center mx-auto">
+            <div class="heading text-center mx-auto" data-aos="fade-up" data-aos-duration="2000">
                 <h2>I Love What I Do</h2>
                 <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                     cubilia Curae;
@@ -239,8 +247,8 @@
                     ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
 
             </div>
-            <div class="projects__content pt-3">
-                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+            <div class="projects__content pt-3" >
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist" data-aos="fade-up" data-aos-duration="2000">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-tab1" data-toggle="pill" href="#pills-all" role="tab"
                             aria-controls="pills-home" aria-selected="true">All Projects</a>
@@ -258,12 +266,12 @@
                             aria-controls="pills-contact" aria-selected="false">Website</a>
                     </li>
                 </ul>
-                <div class="tab-content" id="projectTabs">
+                <div class="tab-content" id="projectTabs" data-aos="fade-up" data-aos-duration="2000">
                     <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
                         aria-labelledby="pills-home-tab">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Apologetic robot holding flowers</h3>
@@ -272,7 +280,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Woman walking her small dog</h3>
@@ -281,7 +289,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Oil bottle branding</h3>
@@ -290,7 +298,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g4.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Smiling Woman</h3>
@@ -299,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g5.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Drink can design</h3>
@@ -308,7 +316,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g6.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">I love you hand gesture</h3>
@@ -321,7 +329,7 @@
                     <div class="tab-pane fade" id="pills-illu" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Apologetic robot holding flowers</h3>
@@ -330,7 +338,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Woman walking her small dog</h3>
@@ -339,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Oil bottle branding</h3>
@@ -352,7 +360,7 @@
                     <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Oil bottle branding</h3>
@@ -361,7 +369,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g4.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">Smiling Woman</h3>
@@ -374,7 +382,7 @@
                     <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card projects__item">
+                                <div class="card projects__item animate__animated animate__zoomIn">
                                     <img src="./img/g6.jpg" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h3 class="h5">I love you hand gesture</h3>
@@ -396,8 +404,8 @@
             <div class="edu__content">
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <h3 class="mb-5">Experiences</h3>
-                        <div class="edu__item">
+                        <h3 class="mb-5" data-aos="fade-up" data-aos-duration="2000">Experiences</h3>
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2018 - now</h5>
                             <h4>Fulltime Freelancer</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -406,7 +414,7 @@
                                 quasi
                                 architecto beatae.</p>
                         </div>
-                        <div class="edu__item">
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2014 - 2017</h5>
                             <h4>Creative Director at Pixar Studio</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -415,7 +423,7 @@
                                 quasi
                                 architecto beatae.</p>
                         </div>
-                        <div class="edu__item">
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2010 - 2014</h5>
                             <h4>Web Designer at Microsoft</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -426,8 +434,8 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                        <h3 class="mb-5">Education</h3>
-                        <div class="edu__item">
+                        <h3 class="mb-5" data-aos="fade-up" data-aos-duration="2000">Education</h3>
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2010</h5>
                             <h4>Master of Design, University of California</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -436,7 +444,7 @@
                                 quasi
                                 architecto beatae.</p>
                         </div>
-                        <div class="edu__item">
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2007</h5>
                             <h4>Bachelor of Arts, Standford University</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -445,7 +453,7 @@
                                 quasi
                                 architecto beatae.</p>
                         </div>
-                        <div class="edu__item">
+                        <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
                             <h5>2004</h5>
                             <h4>Specialize App Design, Harvard University</h4>
                             <p class="my-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -465,7 +473,7 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-5">
-                    <div class="award__left heading">
+                    <div class="award__left heading" data-aos="zoom-in" data-aos-duration="2000">
                         <h2>Our Achievement and Award</h2>
                         <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
                             nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -473,10 +481,10 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-7">
                     <div class="award__right">
-                        <p>Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo
+                        <p data-aos="fade-up" data-aos-duration="2000">Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo
                             facilisis. Mus laoreet scelerisque habitant urna dui sem diam. Purus dis nam eget.
                             Scelerisque placerat lectus lorem etiam. Elementum integer phasellus lectus.</p>
-                        <div class="row">
+                        <div class="row" data-aos="fade-up" data-aos-duration="2000">
                             <div class="col">
                                 <img class="img-fluid" src="./img/award-1.png" alt="">
                             </div>
@@ -498,8 +506,8 @@
             </div>
         </div>
     </section>
-    <footer class="py-5">
-        <div class="container text-center text-white">
+    <footer class="py-5" >
+        <div class="container text-center text-white" data-aos="zoom-in" data-aos-duration="2000">
 
             <div class="footer__main">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -519,7 +527,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+
+        // window.onscroll = function () { scrollFunction() };
+
+        // function scrollFunction() {
+        //     let progressDiv= document.getElementById("welHeading");
+        //    let progressTop = progressDiv.offsetTop;
+        //     if (document.body.scrollTop > progressTop || document.documentElement.scrollTop > progressTop) {
+                
+        //     } else {
+        //         document.getElementById("navbar").style.top = "-50px";
+        //     }
+        // }
+    </script>
 </body>
 
 </html>
-
