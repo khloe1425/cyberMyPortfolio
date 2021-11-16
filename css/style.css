@@ -166,12 +166,20 @@ header .navbar-toggler:hover{
     backdrop-filter: blur(3px);
 }
 
-.myCarousel .carousel-caption img {
+.carousel-caption img{
+    width: 140px;
+    /* padding: 8px; */
+    border-radius: 50%;
+    margin: auto;
+    /* backdrop-filter: blur(3px); */
+}
+
+/* .myCarousel .carousel-caption img {
     border-radius: 50%;
     width: 100%;
     border: 7px solid rgba(255, 255, 255, 0.25);
     
-}
+} */
 
 .myCarousel .carousel-indicators li {
     width: 13px;
@@ -207,7 +215,10 @@ header .navbar-toggler:hover{
 
 /* Responsive */
 @media screen and (max-height:415px) {
-    .carousel__thumb {
+    /* .carousel__thumb {
+        width: 100px;
+    } */
+    .carousel-caption img{
         width: 100px;
     }
     .myCarousel .carousel-caption h5 {
@@ -226,6 +237,9 @@ header .navbar-toggler:hover{
 
 @media screen and (max-width:320px) {
     .carousel__thumb {
+        width: 120px;
+    }
+    .carousel-caption img{
         width: 120px;
     }
     .myCarousel .carousel-caption h5 {
@@ -262,7 +276,7 @@ header .navbar-toggler:hover{
     height: 0.3rem;
 }
 .welcome .progress .progress-bar {
-    width: 0;    
+    width: 100%;    
     background: linear-gradient(to right, #35a22c, #0ea8cf);
 }
 .welcome__content.aos-animate .progress-bar{
